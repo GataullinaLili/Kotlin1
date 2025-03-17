@@ -1,0 +1,11 @@
+fun main() {
+    println("Введите 4-значное число:")
+    val a = readLine()
+
+    if (a != null && a.length == 4 && a.all { it.isDigit() }) {
+        val digits = input.toCharArray().joinToString(", ")
+        println("Результат: $digits")
+    } else {
+        println("Ошибка: пожалуйста, введите корректное 4-значное число.")
+    }
+}
